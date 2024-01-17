@@ -1,0 +1,178 @@
+
+#AIbox{
+    position: relative;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: black;
+}
+
+    .history-section{
+        position: absolute;
+        left: 0px;
+        width: 20%;
+        height: 100%;
+        background-color:lightsteelblue;
+        flex-direction: column;
+        display: flex;
+    }
+
+        .history-section-header{
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .history-section-body{
+            flex-grow: 1;
+            flex-direction: column;
+            display: flex;
+
+        }
+
+            .history-section-body-settings{
+                height: 60px;
+            }
+
+            .history-section-body-settings a:hover{
+                color: #566270;
+            }
+
+            .history-section-body-settings .sort{
+                margin: 20px;
+                float: right;
+            }
+
+            .history-section-body-settings .delete{
+                margin: 20px;
+                float: left;
+            }
+
+            .history-section-body-settings .clear{
+                margin: 20px;
+                float: right;
+            }
+
+            .history-section-body .history{
+                position: relative;
+                width: 90%;
+                margin: auto;
+                flex-grow: 0.98;
+                background-color:bisque;
+                border-radius: 10px;
+            }
+
+                .history-list{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 10px;
+
+                }
+
+                    .history-list a{
+                        padding-block: 10px;
+                        text-align: center;
+                        background-color:#c3d7f1;
+                        margin-inline: 10px;
+                        margin-top: 3px;
+
+                    }
+
+                    .history-list a:hover{
+                        background-color:lightsteelblue;
+                        color:black;
+                    }
+
+                    .history-list a.active{
+                        background-color:#94a4b9;
+                    }
+
+
+    .chat-section{
+        position: absolute;
+        right: 0px;
+        width:80%;
+        height: 100%;
+        background-color:coral;
+        flex-direction: column;
+        display: flex;
+    }
+
+        .chat-section-header{
+            width: 100%;
+            height: 60px;
+            background-color:lightsteelblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .chat-section-header button{
+                padding: 10px;
+                padding-inline: 30px;
+            }
+
+        .chat-section-body{
+            flex-grow: 1;
+            background-color: #94a4b9;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .chat-section .chat{
+                position: relative;
+                margin: auto;
+                flex-grow: 0.95;
+                width: 70%;
+                background-color:bisque;
+                border-radius: 10px;
+            }
+
+                .chat-section .chat p{
+                    position: absolute;
+                    bottom: 30px;
+                    right: 30px;
+                    padding: 20px;
+                    width:600px;
+                    background-color:#c3d7f1;
+                    border-radius: 10px;
+                }
+
+            .chat-section .input{
+                position: relative;
+                margin: auto;
+                margin-bottom: 30px;
+                height: 50px;
+                width: 60%;
+                background-color:lightsteelblue;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+            }
+
+                .chat-section .input .input-bar{
+                    height: 30px;
+                    flex-grow: 0.9;
+                }
+
+                .chat-section .input a{
+                    background-color:aliceblue;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: #94a4b9;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin-inline: 10px;
+                }
+
+                .chat-section .input a:hover{
+                    background-color: bisque;
+                    color: #566270;
+                }

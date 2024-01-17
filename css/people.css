@@ -1,0 +1,348 @@
+
+#peoplebox{
+    position: relative;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color:#566270;
+}
+
+    .category-column{
+        position: relative;
+        width: 18%;
+        height: 100%;
+        background-color:#c3d7f1;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .category-header{
+            position: relative;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+            .category-header a{
+                width: 50%;
+                padding-block: 10px;
+                text-align: center;
+                background-color: lightsteelblue;
+            }
+
+            .category-header a:hover{
+                background-color:bisque;
+                border-radius: 10px;
+                color: black;
+            }
+
+            .category-header .active{
+                background-color: #c3d7f1;
+            }
+
+        .category-settings{
+            position: relative;
+            height: 50px;
+        }
+
+            .category-settings .add-group{
+                position: absolute;
+                top: 4px;
+                left: 10px;
+            }
+
+            .category-settings .add-category{
+                position: absolute;
+                bottom:5px;
+                left:10px;
+            }
+
+            .category-settings .sort{
+                position: absolute;
+                top: 4px;
+                right: 10px
+            }
+
+        .category-body{
+            position: relative;
+            flex-grow: 1;
+            background-color:bisque;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+            .category-box{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                background-color:lightsteelblue;
+            }
+
+                .category-box button{
+                    position: relative;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+
+                .category-box i{
+                    position: absolute;
+                    right:10px;
+                    top: 4px;
+                }
+                
+                .category-box li{
+                    margin: 5px;
+                }
+
+
+    .channel-column{
+        position: relative;
+        width: 13%;
+        height: 100%;
+        background-color:#c3d7f1;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .channel-header{
+            position: relative;
+            height: 40px;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .channel-name{
+            position: relative;
+            height:60px;
+            background-color:lightsteelblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .channel-body{
+            position: relative;
+            flex-grow: 1;
+            background-color:lightsteelblue;
+        }
+
+            .channel-box{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                background-color:#c3d7f1;
+            }
+
+            .channel-box button{
+                position: relative;
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            
+            .channel-box i{
+                position: absolute;
+                right:10px;
+                top: 4px;
+            }
+            
+            .channel-box ul{
+                position: relative;
+                padding-left: 0px;
+            }
+
+                .channel-box li{
+                    margin: 5px;
+                    margin-top: 10px;
+                    padding-left: 5px;
+                }
+
+
+    .chat-column{
+        position: relative;
+        width: 56%;
+        height: 100%;
+        background-color:#94a4b9;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .chat-header{
+            position: relative;
+            height: 40px;
+            background-color:#c3d7f1;
+        }
+
+        .chat-menu{
+            position: relative;
+            height: 40px;
+            width: 98%;
+            background-color:lightsteelblue;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+            .chat-menu a{
+                position: relative;
+                padding: 10px;
+                background-color: lightsteelblue;
+            } 
+
+            .chat-menu .group-calendar{
+                position: absolute;
+                left: 0px;
+            }
+
+
+        .chat-body{
+            position: relative;
+            flex-grow: 1;
+            background-color:#94a4b9;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .chat-body .chat{
+                position: relative;
+                width: 96%;
+                margin-inline: auto;
+                flex: 0.96;
+                background-color:bisque;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+                .chat-body .chat p{
+                    position: absolute;
+                    bottom: 30px;
+                    right: 30px;
+                    padding: 20px;
+                    width:600px;
+                    background-color:#c3d7f1;
+                    border-radius: 10px;
+                }
+
+            .chat-body .input{
+                position: relative;
+                margin: auto;
+                margin-bottom: 30px;
+                height: 50px;
+                width: 80%;
+                background-color: lightsteelblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .chat-body input{
+                    height: 30px;
+                    flex-grow: 0.9;
+                }
+
+                .chat-body .input a{
+                    background-color: aliceblue;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: #94a4b9;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin-inline: 10px;
+                
+                }
+
+                .chat-body .input a:hover{
+                    background-color:bisque;
+                    color: black;
+                }
+
+    .member-column{
+        position: relative;
+        width: 13%;
+        height: 100%;
+        background-color:lightsteelblue;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .member-header{
+            position: relative;
+            height: 40px;
+            background-color:lightsteelblue;
+            padding: 10px;
+        }
+
+        .member-settings{
+            position: relative;
+            height: 50px;
+        }
+
+            .member-settings .add-member{
+                position: absolute;
+                top: 4px;
+                left: 10px;
+            }
+
+            .member-settings .add-category{
+                position: absolute;
+                bottom:5px;
+                left:10px;
+            }
+
+            .member-settings .sort{
+                position: absolute;
+                top: 4px;
+                right: 10px
+            }
+
+        .member-body{
+            position: relative;
+            flex-grow: 1;
+            background-color:lightsteelblue;
+        }
+
+            .member-box{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                background-color:#c3d7f1;
+            }
+
+                .member-box button{
+                    position: relative;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+
+                .member-box i{
+                    position: absolute;
+                    right:10px;
+                    top: 4px;
+                }
+                
+                .member-box ul{
+                    position: relative;
+                    padding-left: 0px;
+                }
+    
+                    .member-box li{
+                        margin: 5px;
+                        margin-top: 10px;
+                        padding-left: 5px;
+                    }
+
+#peoplebox ul{
+    list-style-type: none;
+}

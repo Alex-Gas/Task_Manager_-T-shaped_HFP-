@@ -1,0 +1,175 @@
+#emailbox{
+    position: relative;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color:gray;
+}
+
+    .email-menu{
+        position: relative;
+        height: 40px;
+        background-color:#c3d7f1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+        .email-menu a{
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        .email-menu button{
+            margin-left: 140px;
+            width: 100px;
+        }
+
+    .email-body{
+        position: relative;
+        flex-grow: 1;
+        background-color:#94a4b9;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+        .address-column{
+            position: relative;
+            width: 15%;
+            height: 100%;
+            background-color: #c3d7f1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+            .address-box{
+                height: 240px;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                background-color:bisque;
+                border-radius: 8px;
+            }
+
+                .address-box-header{
+                    background-color:bisque;
+                    height:40px;
+                    border-radius: 8px;
+                }
+
+                    .address-box-header h4{
+                        margin: 7px;
+                    }
+
+                .address-box-body{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                    .address-box-body a{
+                        padding: 5px;
+                    }
+
+        .mail-column{
+            position: relative;
+            width: 15%;
+            height: 100%;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .mail-col-header{
+                position: relative;
+                width:100%;
+                height: 40px;
+                background-color:lightsteelblue;
+            }
+
+                .mail-col-header h4{
+                    margin: 10px;
+                    margin-left: 20px;
+                }
+
+            .mail-col-body{
+                position: relative;
+                flex-grow: 1;
+                background-color: lightsteelblue;
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+            }
+
+                .mail-col-body input{
+                    position: relative;
+                    height: 26px;
+                    margin-bottom: 8px;
+                }
+
+                .email-icon{
+                    position: relative;
+                    height: 70px;
+                    position: relative;
+                    background-color:#c3d7f1;
+                    text-align: center;
+                    padding: 20px;
+                    margin-top: 3px;
+                    cursor: pointer;
+                }
+
+                    .email-icon a{
+                        position: absolute;
+                        top: 0px;
+                        right: 5px;
+                        color: black;
+                    }
+
+                    .email-icon:hover{
+                        background-color: bisque;
+                    }
+
+        .mail-screen{
+            position: relative;
+            flex-grow: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .mail-scr-header{
+                position: relative;
+                width: 100%;
+                height: 40px;
+                background-color:lightsteelblue;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+                .mail-scr-header a{
+                    padding:30px;
+                    padding-block: 5px;
+                }
+
+            .mail-scr-body{
+                position: relative;
+                width: 97%;
+                flex-grow: 0.98;
+                margin: auto;
+                margin-top: 0px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background-color:bisque;
+                padding: 20px;
+            }

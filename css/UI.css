@@ -1,0 +1,591 @@
+body{
+	max-height: 100vh;
+	overflow: hidden;
+	background-color: #566270;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* RIGHT UI */
+.UIsidebar{
+	position: relative;
+	width: 16%; 
+	height: 100%;
+	background-color:#c3d7f1;;
+	float: right;
+}	
+
+	.UIclockbox{
+		position: relative;
+		height: 70px;
+		width: 100%;
+		background-color: #c3d7f1;;
+		z-index: 1;
+	}
+
+		.UIclockbox #clock{
+			position: relative;
+			height: 100%;
+			width: 100%;
+			font-weight: bold;
+			font-size: 45px;
+			margin-left: 30px;
+			padding-top: 30px;
+			padding-bottom: 20px;
+			z-index: 1;
+		}
+
+	.UIclocknotificationbox{
+		position: relative;
+		height: 80px;
+		width: 100%;
+		z-index: 1;
+		padding-left: 10px;
+		padding-top: 6px;
+		display: flex;
+		flex-direction: column;
+		background-color: #c3d7f1;
+	}
+
+		.UIclocknotificationbox h5{
+			margin-bottom: 6px;
+		}
+
+		.UIclocknotificationbox a{
+			margin-bottom: 5px;
+			margin-left: 10px;
+			color: black;
+		}
+
+		.UIclocknotificationbox a:hover{
+			color: #566270;
+		}
+
+	.UIcalendar{
+		position: relative;
+		height: 310px;
+		width: 100%;
+		background-color:cyan;
+		z-index: 1;
+	}
+	
+		.UIcalendar .container {
+			position: relative;
+			width: 100%;
+			height: 310px;
+			background-color:#c3d7f1;;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+			.UIcalendar .calendar {
+				width: 100%;
+				height: 290px;
+				background-color: #222227;
+			}
+			
+			.UIcalendar .month {
+				width: 100%;
+				height: 70px;
+				background-color:#94a4b9;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				text-align: center;
+				padding: 20px;
+			}
+			
+			.UIcalendar .month i {
+				cursor: pointer;
+				padding: 5px;
+				padding-inline: 10px;
+				border-radius: 4px;
+			}
+
+			.UIcalendar .month i:hover{
+				background-color:#c3d7f1;
+			}
+			
+			.UIcalendar .month h4 {
+				font-weight: 400;
+				font-size: large;
+				text-transform: uppercase;
+			}
+			
+			.UIcalendar .month p {
+				font-size: 15px;
+			}
+			
+			.UIcalendar .weekdays {
+				width: 100%;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				color: #eee;
+			}
+			
+			.UIcalendar .weekdays div {
+				font-weight: 200;
+				font-size: 12px;
+				width: calc(44.2rem / 7);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.UIcalendar .days {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				color: #eee;
+	
+			}
+			
+			.UIcalendar .days div {
+				margin: 0.2rem;
+				width: calc(17.6rem/7);
+				height: 23px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: background-color 0.2s;
+			}
+			
+			.UIcalendar .days div:hover:not(.today) {
+				background-color: #262626;
+				border: 0.1rem solid #777;
+				cursor: pointer;
+			}
+			
+			.UIcalendar .prev-date,
+			.UIcalendar .next-date {
+				opacity: 0.5;
+			}
+			
+			.UIcalendar .today {
+				background-color: bisque;
+				color: black;
+			}
+
+	.UIcurrenttaskbox{
+		position: relative;
+		height: 70px;
+		width: 100%;
+		background-color:#c3d7f1;;
+		padding-left: 10px;
+		z-index: 1;
+	}
+
+		.UIcurrenttaskbox a{
+			margin-bottom: 5px;
+			margin-left: 10px;
+			color: black;
+			font-size: medium;
+		}
+
+			.UIcurrenttaskbox a:hover{
+				color: #566270;
+			}
+
+	.UItimescalebox{
+		position: relative;
+		height: 400px;
+		width: 100%;
+		background-color:#94a4b9;
+		z-index: 0;
+	}
+	
+		.UItimescalebox .timescaleline{
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: black;
+			top: 223px;
+		}
+
+		.UItimescalebox .bottommargin{
+			position: absolute;
+			width: 100%;
+			height: 20px;
+			background-color:#c3d7f1;;
+			bottom: 0px;
+		}
+	
+	
+		.UItimescalebox .timescale{
+			position: relative;
+			background-color:bisque;
+			height: 1440px;
+			z-index: -1;
+			width: 94%;
+			margin-left: 3%;
+		}
+	
+			.UItimescalebox .timeline{
+				position: absolute;
+				height: 1440px;
+				width: 13%;
+			}
+	
+				.UItimescalebox .timeline div{
+					position: relative;
+					height: 40px;
+					padding-top: 9px;
+					font-size: 11px;
+					text-align: right;
+				}
+	
+			.UItimescalebox .taskline{
+				position: relative;
+				height: 1400px;
+				margin-top: 20px;
+				width: 87%;
+				float: right;
+				font-size: 14px;
+			}
+
+				.UItimescalebox .taskline div{
+					height: 40px;
+					border-style: solid;
+					border-top: 1px solid black;
+					border-right-width: 0px;
+					border-bottom-width: 0px;
+					border-left-width: 0px;
+					box-sizing: border-box;
+					padding-top: 7px;
+					padding-left: 8px;
+				}
+
+				.UItimescalebox .taskline .task-active{
+					background-color: #e7cfb2;
+				}
+
+				.UItimescalebox .taskline .task-active:hover{
+					background-color:#dac3a7;
+					cursor: pointer;
+				}
+
+
+/* MAIN SCREEN */
+.mainsection{
+	position: relative;
+	height: 100%;
+	width: 84%; 
+}
+
+	/* LEFT UI */
+	.UIheader{
+		position: relative;
+		width: 100%; 
+		height: 100px;
+		float: left;
+	}
+
+		.UIheader .UImenubar{
+			position: relative;
+			height: 40px;
+			background-color: #c3d7f1;;
+			display: flex;
+			flex-direction: row;
+		}
+
+			.UIheader .UImenubar a{
+				padding-inline: 16px;
+				padding-block: 14px;
+				color: black;
+				border-radius: 5px;
+				margin-left: 5px;
+			}
+			
+			.UIheader .UImenubar a:hover{
+				background-color: #94a4b9;
+			}
+
+			.UIheader .UImenubar h4{
+				margin-top: 10px;
+				margin-left: 20px;
+			}
+
+
+		.UIheader .UIorientationmenu{
+			position: relative;
+			width: 9%;
+			height: 40px;
+			float: left;
+			background-color:#c3d7f1;;
+			padding: 5px;
+			padding-left: 10px;
+			display: flex;
+			flex-direction: row;
+			border-bottom-right-radius: 10px;
+		}
+
+			.UIheader .UIorientationmenu a{
+				position: relative;
+				width: 30px;
+				height: 30px;
+				border-radius: 5px;
+				margin-left: 10px;
+			}
+			
+			.UIheader .UIorientationmenu a:hover{
+				background-color:#94a4b9;
+			}
+
+				.UIheader .UIorientationmenu span{
+					position: absolute;
+					font-size: 36px;
+					top: 2px;
+					padding: 0px;
+					color: black;
+				}
+
+			.UIheader .fa.refresh_btn{
+				position: absolute;
+				top:8px;
+				left: 8px;
+				color: black;
+			}
+
+		.UIheader .navbar{
+			position: absolute;
+			height: 40px;
+			width: 60%;
+			left: 25%;
+			background-color: #94a4b9 !important;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			font-size:medium;
+		}
+
+		.UIheader .navbar-nav{
+			margin-inline: auto;
+		}
+
+		.UIheader .nav-item{
+			margin-inline: 5px;
+			border-radius: 5px;
+		}
+
+			.UIheader .nav-item a{
+				color: black !important;
+				padding-inline: 40px !important;
+				
+			}
+
+			.UIheader .nav-item:hover{
+				background-color: #c3d7f1;;
+			}
+
+		.UIheader .nav-item.active{
+			background-color: bisque;
+		}
+
+	
+	.UImain-settings{
+		position: absolute;
+		width: 160px;
+		height: 200px;
+		background-color:aliceblue;
+		top: 40px;
+		left:10px;
+		z-index: 9999;
+		padding: 10px;
+		display: none;
+		border-radius: 5px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #566270;
+	}
+
+		.UImain-settings .main-settings-box{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.UImain-settings .main-settings-box a{
+			padding: 2px;
+			margin-top: 2px;
+			border-radius: 5px;
+			color: black;
+		}
+
+		.UImain-settings .main-settings-box a:hover{
+			background-color: #94a4b9;
+		}
+
+
+	.UIleftmargin{
+		position: relative;
+		float: left;
+		width: 3%;
+		height: calc(100% - 100px);
+	}
+		
+		.UIleftmargin .btn.offscreen{
+			position: relative;
+			height: 400px;
+			top: calc(50% - 250px);
+			background-color: #94a4b9;
+		}
+
+
+	.UIchatbox{
+		position: absolute;
+		bottom: 0px;
+		width: 300px;
+		height: auto;
+		background-color:#94a4b9;
+		z-index: 20;
+		display: block;
+		border-radius: 3px;
+		border-style: solid;
+		border-width: 1px;
+	}
+
+	#UIquickAIchatbox{
+		left: 800px;
+	}
+
+		#UIquickAIchatbox input{
+			width: 90%;
+			margin: 11px;
+		}
+
+		#UIquickAIchatbox .chat-window{
+			text-align: right;
+			display: flex;
+			flex-direction: column-reverse;
+			background-color: #c3d7f1;
+		}
+
+			#UIquickAIchatbox .chat-window p{
+				position: absolute;
+				padding: 10px;
+				background-color:bisque;
+				border-radius: 10px;
+				width: 200px;
+				right: 5px;
+				bottom: 10px;
+			}
+
+	#UIquickfriendschatbox{
+		left: 1200px;
+	}
+
+	 	#UIquickfriendschatbox .chat-window{
+			background-color: #c3d7f1;
+			display: flex;
+			flex-direction: column;
+		}
+
+			#UIquickfriendschatbox .chat-window a{
+				background-color:bisque;
+				padding-block: 5px;
+				padding-left: 30px;
+				margin-top: 3px;
+				margin-inline: 10px;
+				color: black;
+			}
+
+			#UIquickfriendschatbox .chat-window a:hover{
+				background-color: lightgrey;
+			}
+
+	.UIchatbox .chathead{
+		position: relative;
+		width: 100%;
+		height: 30px;
+		padding-left: 10px;
+		padding-top: 2px;
+	}
+
+	.UIchatbox .chathead:hover{
+		background-color: lightsteelblue;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.UIchatbox .chatbody{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		display: none;
+		padding: 15px;
+	}
+
+		.UIchatbox .chat-window{
+			position: relative;
+			width: 100%;
+			height: 340px;
+			background-color: white;
+		}
+
+
+	.UIoffscreen{
+		position: absolute
+	}
+
+		.UIoffscreen .offcanvas.offcanvas-start.h-75{
+			width: 300px;
+			border-radius: 5px;
+		}
+
+			.offcanvas-header{
+				background-color: #c3d7f1;;
+
+			}
+
+			.offcanvas-body{
+				padding: 1rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				background-color: #c3d7f1 ;
+				font-size: medium;
+			}
+
+				.UIoffscreen .vertical-menu {
+					width: 100%;
+					height: 100%;
+					background-color: bisque;
+					padding: 10px;
+					border-radius: 10px;
+					}
+					
+					.UIoffscreen .vertical-menu a {
+					color: black;
+					display: block;
+					padding: 12px;
+					text-decoration: none;
+					border-radius: 5px;
+					}
+					
+					.UIoffscreen .vertical-menu a:hover {
+						background-color: lightsteelblue;
+					}
+					
+					.UIoffscreen .vertical-menu a.active {
+					background-color:#c3d7f1;
+					color: black;
+					}
+				
+				.UIoffscreen .horizontal-menu ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+				}
+					
+				.UIoffscreen .horizontal-menu li {
+					display: inline;
+				}
+
+
+	/* MAIN DOCUMENT*/
+	.mainsection .main{
+		position: relative;
+		float: left;
+		background-color:bisque;
+		width: 94%;
+		height: calc(100% - 140px);
+		background-color:#c3d7f1;
+	}

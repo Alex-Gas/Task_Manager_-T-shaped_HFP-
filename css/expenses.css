@@ -1,0 +1,188 @@
+#expensebox{
+    position: relative;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    color: black;
+}
+
+
+    .expense-column{
+        position: relative;
+        width: 15%;
+        height: 100%;
+        background-color:#c3d7f1;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .expense-column h3{
+            position: relative;
+            height: 40px;
+            margin: 0px;
+            text-align: center;
+            padding: 6px;;
+        }
+
+        .expense-menu{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color:bisque;
+            padding: 10px;
+            margin: 10px;
+            height:400px;
+            border-radius: 10px;
+        }
+
+            .expense-menu a{
+                position: relative;
+                padding-block: 10px;
+                text-align: center;
+                background-color: #c3d7f1;
+                margin-top: 3px;
+            }
+
+            .expense-menu a:hover{
+                background-color:#94a4b9;
+                color: black;
+            }
+
+            .expense-menu .active{
+                background-color:lightsteelblue;
+            }
+
+    .main-expense-section{
+        position: relative;
+        flex-grow: 1;
+        background-color:brown;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .expense-header{
+            position: relative;
+            width: 100%;
+            height: 40px;
+            background-color:#c3d7f1;
+        }
+
+            .expense-header h3{
+                position: relative;
+                text-align: center;
+                margin-top: 6px;
+            }
+
+        .expense-body{
+            position: relative;
+            width: 100%;
+            flex-grow: 1;
+            background-color:cornsilk;
+            display: flex;
+            flex-direction: row;
+        }
+
+            .entry-column{
+                position: relative;
+                width: 18%;
+                background-color:lightsteelblue;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+                .entry-column .add-entry{
+                    position: relative;
+                    margin-inline: 25%;
+                    height: 30px;
+                    margin-bottom: 10px;
+                }
+
+                .group-column .input-bar{
+                    position: relative;
+                    margin: 10px;
+                }
+
+                .expenses-list{
+                    position: relative;
+                    height: 500px;
+                    background-color:bisque;
+                    margin-top: 10px;
+                }
+
+                    .expense-item{
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px;
+                        background-color:#c3d7f1;
+                    }
+
+                        .expense-item button{
+                            position: relative;
+                            text-align: left;
+                            padding-left: 10px;
+                        }
+
+                        .expense-item i{
+                            position: absolute;
+                            right:10px;
+                            top: 4px;
+                        }
+                        
+                        .expense-item li{
+                            margin: 5px;
+                        }
+
+
+            .expense-section{
+                position: relative;
+                flex-grow: 1;
+                background-color: coral;
+                display: flex;
+                flex-direction: column;
+            }
+
+                .expense-section-header{
+                    position: relative;
+                    height: 40px;
+                    background-color:lightsteelblue;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding-inline: 20px;
+                }
+
+                    .expense-section-header a{
+                        width: 25%;
+                        padding-block: 10px;
+                        text-align: center;
+                    }
+
+                    .expense-section-header a:hover{
+                        background-color:#94a4b9;
+                        color: black;
+                    }
+
+                    .expense-section-header .active{
+                        background-color: bisque;
+                    }
+
+                .expense-section-body{
+                    position: relative;
+                    flex-grow: 1;
+                    background-color: #94a4b9;
+                    display: flex;
+                }
+
+                    .expense-section-body .expenses{
+                        position: relative;
+                        flex-grow: 1;
+                        margin-inline: 20px;
+                        background-color:bisque;
+                    }
